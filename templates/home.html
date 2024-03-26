@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>iBanking - Payment</title>
+</head>
+<body>
+    <h1>Payment Form</h1>
+    <form action="/pay-tuition" method="post">
+        <label for="student_id">Student ID:</label>
+        <input type="text" id="student_id" name="student_id"><br><br>
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name"><br><br>
+        <label for="amount">Amount:</label>
+        <input type="text" id="amount" name="amount"><br><br>
+        <input type="hidden" id="email" name="email" value="{{ email }}">
+        <input type="submit" value="Pay">
+    </form>
+</body>
+</html>
